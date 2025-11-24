@@ -27,14 +27,14 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Footer from './Footer'
+import { MdOutlineDateRange } from 'react-icons/md'
 
 export default function Tabs() {
     const { activeTab, setActiveTab } = useAppStore()
     const [isMounted, setIsMounted] = useState(false)
     const [hoveredTab, setHoveredTab] = useState<string | null>(null)
     const [copiedItem, setCopiedItem] = useState<string | null>(null)
-    const [modalImage, setModalImage] = useState<string | null>(null)
-    const [modalAlt, setModalAlt] = useState<string>('')
+
 
     useEffect(() => {
         setIsMounted(true)
@@ -66,12 +66,13 @@ export default function Tabs() {
 
     const getTabIcon = (tabId: string) => {
         const icons: { [key: string]: any } = {
-            'terms': FaUserTie,
+            'terms': MdOutlineDateRange,
             'hours': FaBusinessTime,
             'address': FaMapPin,
             'locations': FaLocationArrow,
             'banking': FaLandmark,
-            'contact': FaComments
+            'contact': FaComments,
+            'installment': FaMoneyBillWave
         }
         return icons[tabId] || FaStore
     }
@@ -83,7 +84,8 @@ export default function Tabs() {
             'address': 'from-blue-500 to-blue-400',
             'locations': 'from-blue-600 to-blue-500',
             'banking': 'from-blue-500 to-blue-300',
-            'contact': 'from-blue-500 to-blue-500'
+            'contact': 'from-blue-500 to-blue-500',
+            'installment': 'from-blue-500 to-blue-500'
         }
         return colors[tabId] || 'from-blue-500 to-blue-500'
     }
@@ -209,7 +211,7 @@ export default function Tabs() {
                             className={`group relative  overflow-hidden rounded-2xl bg-linear-to-r ${tabColor} text-white shadow-2xl hover:shadow-3xl transition-all duration-500 block`}
                         >
                             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300"></div>
-                            <div className="card-body p-6 relative z-10">
+                            <div className="card-body p-4 pr-3  relative z-10">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center space-x-4 space-x-reverse">
                                         <div className="p-3 ml-2 bg-white/20 rounded-xl backdrop-blur-sm transform group-hover:scale-110 transition-transform duration-300">
@@ -244,7 +246,7 @@ export default function Tabs() {
                             className="group relative overflow-hidden rounded-2xl bg-linear-to-r from-green-500 to-green-600 text-white shadow-2xl hover:shadow-3xl transition-all duration-500 block"
                         >
                             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300"></div>
-                            <div className="card-body p-6 relative z-10">
+                            <div className="card-body p-4 pr-3 relative z-10">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center space-x-4 space-x-reverse">
                                         <div className="p-3 ml-2 bg-white/20 rounded-xl backdrop-blur-sm transform group-hover:scale-110 transition-transform duration-300">
@@ -279,7 +281,7 @@ export default function Tabs() {
                             className="group relative overflow-hidden rounded-2xl bg-linear-to-r from-yellow-400 to-yellow-500 text-white shadow-2xl hover:shadow-3xl transition-all duration-500 block"
                         >
                             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300"></div>
-                            <div className="card-body p-6 relative z-10">
+                            <div className="card-body p-4 pr-3 relative z-10">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center space-x-4 space-x-reverse">
                                         <div className="p-3 ml-2 bg-white/20 rounded-xl backdrop-blur-sm transform group-hover:scale-110 transition-transform duration-300">
@@ -305,7 +307,7 @@ export default function Tabs() {
                         transition={{ delay: index * 0.1 }}
                         className="group relative overflow-hidden rounded-2xl bg-linear-to-br from-blue-50 to-blue-50 dark:from-blue-900/20 dark:to-blue-900/20 shadow-xl border border-blue-500 dark:border-blue-500"
                     >
-                        <div className="card-body p-6">
+                        <div className="card-body p-4 pr-3">
                             <div className="flex items-center space-x-3 space-x-reverse mb-4">
                                 <div className={`p-3 ml-2 bg-linear-to-r ${tabColor} rounded-xl text-white shadow-lg`}>
                                     <IconComponent size={18} />
@@ -334,7 +336,7 @@ export default function Tabs() {
                         transition={{ delay: index * 0.1 }}
                         className="group relative overflow-hidden rounded-2xl bg-linear-to-br from-blue-50 to-blue-50 dark:from-blue-900/20 dark:to-blue-900/20 shadow-xl border border-blue-500 dark:border-blue-500"
                     >
-                        <div className="card-body p-0">
+                        <div className="card-body p-4 pr-3">
                             <div className="flex items-center space-x-3 space-x-reverse p-6 pb-4">
                                 <div className={`p-3 ml-2 bg-linear-to-r ${tabColor} rounded-xl text-white shadow-lg`}>
                                     <FaMapMarkerAlt size={18} />
@@ -383,8 +385,8 @@ export default function Tabs() {
                 <div className="absolute inset-0 bg-linear-to-r from-blue-100 via-blue-100 to-orange-100 dark:from-blue-900/20 dark:via-blue-900/20 dark:to-orange-900/20 rounded-3xl blur-xl opacity-50"></div>
 
                 <div className="relative bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/20 p-2">
-                    <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-2">
-                        {tabsConfig.tabs.slice(0, 6).map((tab) => {
+                    <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-7 gap-2">
+                        {tabsConfig.tabs.map((tab) => {
                             const TabIcon = getTabIcon(tab.id)
                             const tabColor = getTabColor(tab.id)
                             const isActive = activeTab === tab.id
