@@ -206,7 +206,7 @@ export default function Tabs() {
                             id='services'
                             rel="noopener noreferrer"
                             onClick={() => handleLinkClick(content.value, 'link')}
-                            className={`group relative overflow-hidden rounded-2xl bg-linear-to-r ${tabColor} text-white shadow-2xl hover:shadow-3xl transition-all duration-500 block`}
+                            className={`group relative  overflow-hidden rounded-2xl bg-linear-to-r ${tabColor} text-white shadow-2xl hover:shadow-3xl transition-all duration-500 block`}
                         >
                             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300"></div>
                             <div className="card-body p-6 relative z-10">
@@ -217,7 +217,7 @@ export default function Tabs() {
                                         </div>
                                         <div>
                                             <span className="text-lg font-bold group-hover:underline block">{content.label}</span>
-                                            <span className="text-sm opacity-90 mt-1 block">{content.value}</span>
+                                            <span className="text-sm opacity-90 mt-1 block ">{content.value}</span>
                                         </div>
                                     </div>
                                     <FaExternalLinkAlt className="group-hover:translate-x-1 transition-transform duration-300 ml-2" />
@@ -371,7 +371,7 @@ export default function Tabs() {
 
     return (
         <>
-        <div className="w-full max-w-7xl mx-auto p-4 mb-12">
+        <div className="w-full max-w-7xl mx-auto p-4 mb-12 mt-6 ">
             {/* Enhanced Tabs Navigation */}
             <motion.div
                 className="relative mb-12"

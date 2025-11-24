@@ -18,6 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl" data-theme="light">
+      <head >
+        <meta name="color-scheme" content="light" />
+        <meta name="supported-color-schemes" content="light" />
+
+      </head>
       <body >
         <ClientLayout>{children}</ClientLayout>
       </body>
