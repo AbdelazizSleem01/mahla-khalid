@@ -1,0 +1,164 @@
+{
+  "navbar": {
+    "logo": "/images/Logo.png",
+    "links": [
+      { "name": "خدماتنا", "href": "#services" },
+      { "name": "الفروع", "href": "#branches" },
+      { "name": "من نحن", "href": "#about" },
+      { "name": "التواصل", "href": "#contact" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "content": {
+        "title": "مهله خالد للتجارة",
+        "subtitle": "شركة متخصصة في بيع البطاقات والكروت مسبقة الدفع بجميع أنواعها",
+        "description": "نقدم أفضل الخدمات والجودة العالية لعملائنا الراغبين في التعامل مع البطاقات والكروت التجارية",
+        "backgroundImage": "/images/background.jpg",
+        "buttons": [
+          { "text": "خدماتنا", "href": "#services", "primary": true },
+          { "text": "تواصل معنا", "href": "#contact", "primary": false }
+        ]
+      }
+    },
+    {
+      "id": "services",
+      "type": "services",
+      "content": {
+        "title": "خدماتنا",
+        "subtitle": "نقدم مجموعة متكاملة من الخدمات",
+        "services": [
+          {
+            "title": "بيع البطاقات",
+            "description": "بيع جميع أنواع البطاقات والكروت مسبقة الدفع بأفضل الأسعار في السوق",
+            "icon": "credit-card",
+            "features": ["بطاقات شحن", "كروت خدمات", "بطاقات هدايا"]
+          },
+          {
+            "title": "استشارات مالية",
+            "description": "نقدم الاستشارات المالية لعملائنا في جميع مواقعنا",
+            "icon": "calculator",
+            "features": ["تحويل عملات", "عمليات مصرفية", "استشارات مالية"]
+          },
+          {
+            "title": "خدمات إلكترونية",
+            "description": "رموز وكروت رقمية مع حلول شاملة لجميع الاحتياجات",
+            "icon": "smartphone",
+            "features": ["رموز رقمية", "طباعة فورية", "خدمات إلكترونية"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "branches",
+      "type": "branches",
+      "content": {
+        "title": "فروعنا",
+        "subtitle": "موجودون في أكثر من موقع لتخدم عامة عملائنا",
+        "branches": [
+          {
+            "name": "الفرع الرئيسي - مهله خالد 1",
+            "address": "تبوك – الحمراء – شارع الهضيبة – بجوار فندق برج الشمال ونجد",
+            "phone": "+966542497637",
+            "manager": "م/ حسين ابوهاجر",
+            "image": "/images/Logo3.jpeg",
+            "map": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3510.7047720969827!2d36.57058568492331!3d28.367773982522987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDIyJzA0LjAiTiAzNsKwMzQnMDYuMiJF!5e0!3m2!1sar!2seg!4v1764002167772!5m2!1sar!2seg"
+          },
+          {
+            "name": "الفرع الثاني - مهله خالد 2",
+            "address": "تبوك – الحمراء – شارع الهضيبة – بجوار فندق أسوار بلس",
+            "phone": "+966547854809",
+            "manager": "م/ اسلام",
+            "image": "/images/Logo3.jpeg",
+            "map": "https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d14042.501883615161!2d36.575258068107146!3d28.370170720350814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d28.3678329!2d36.5683399!4m3!3m2!1d28.370835099999997!2d36.56986!5e0!3m2!1sar!2seg!4v1764002281141!5m2!1sar!2seg"
+          }
+        ]
+      }
+    },
+    {
+      "id": "about",
+      "type": "about",
+      "content": {
+        "title": "من نحن",
+        "subtitle": "تعرف أكثر على شركتنا وخدماتنا",
+        "description": "شركة مهله خالد للتجارة هي إحدى الشركات الرائدة في مجال بيع البطاقات والكروت مسبقة الدفع في المملكة العربية السعودية تمتلك فروعاً متعددة لتلبية احتياجات العملاء في جميع أنحاء المملكة.",
+        "stats": [
+          { "number": "2", "suffix": "+", "label": "فروع" },
+          { "number": "100", "suffix": "%", "label": "رضا العملاء" },
+          { "number": "10", "suffix": "+", "label": "سنوات خبرة" },
+          { "number": "24", "suffix": "/7", "label": "خدمة متواصلة" }
+        ],
+        "features": [
+          {
+            "title": "الخبرة والمهارة",
+            "description": "طرفة الخبراء والمتخصصين في مجال البطاقات والكروت المسبقة الدفع",
+            "icon": "star"
+          },
+          {
+            "title": "خدمة متميزة",
+            "description": "نسعى لتقديم أفضل خدمات لعملاؤنا مع ضمان الجودة والموثوقية",
+            "icon": "heart"
+          },
+          {
+            "title": "تغطية شاملة",
+            "description": "فروعنا تغطي جميع المناطق المهمة لتوفير الخدمة لأكبر عدد من العملاء",
+            "icon": "map"
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact",
+      "type": "contact",
+      "content": {
+        "title": "تواصل معنا",
+        "subtitle": "نحن هنا للمساعدة والإجابة على استفساراتكم",
+        "contacts": [
+          {
+            "type": "whatsapp",
+            "label": "واتس اب الفرع الأول",
+            "value": "+966542497637",
+            "description": "م/ حسين ابوهاجر"
+          },
+          {
+            "type": "whatsapp",
+            "label": "واتس اب الفرع الثاني",
+            "value": "+966547854809",
+            "description": "م/ اسلام"
+          },
+          {
+            "type": "snapchat",
+            "label": "سناب شات",
+            "value": "https://www.snapchat.com/add/husseingaze24?share_id=FcAwt8oUUeE&locale=ar-SA-u-nu-arab",
+            "description": "تابعونا على سناب شات"
+          },
+          {
+            "type": "phone",
+            "label": "الهاتف",
+            "value": "+966547854809",
+            "description": "اتصل بنا"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hours",
+      "type": "hours",
+      "content": {
+        "title": "أوقات العمل",
+        "schedules": [
+          {
+            "days": "الأحد - الخميس",
+            "hours": "9:00 ص - 12:00 ظ / 4:00 م - 10:00 م"
+          },
+          {
+            "days": "الجمعة - السبت",
+            "hours": "4:00 م - 10:30 م"
+          }
+        ]
+      }
+    }
+  ]
+}

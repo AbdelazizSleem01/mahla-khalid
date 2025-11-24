@@ -1,0 +1,207 @@
+{
+  "tabs": [
+    {
+      "id": "terms",
+      "title": "شروط البيع بنظام المهله ",
+      "content": [
+        {
+          "type": "text",
+          "value": "موظف حكومي"
+        },
+        { "type": "text", "value": "غير مطالب في مكاتب أخرى" },
+        { "type": "text", "value": "عدم وجود إيقاف خدمات" },
+        { "type": "text", "value": "عدم وجود سند إلكتروني من أشخاص" },
+        { "type": "text", "value": "مؤسسه مهله خالد 1 و 2" },
+        {
+          "type": "text",
+          "value": "البيع للبطاقات والكروت مسبقه الدفع بكل انواعها"
+        }
+      ]
+    },
+    {
+      "id": "hours",
+      "title": "أوقات الدوام",
+      "content": [
+        { "type": "text", "value": "الفترة الصباحية: 9 ص – 12 ظ" },
+        { "type": "text", "value": "الفترة المسائية: 4 عصرًا – 10 مساءً" },
+        { "type": "text", "value": "الجمعة والسبت: 4 عصرًا – 10:30 مساءً" }
+      ]
+    },
+    {
+      "id": "address",
+      "title": "العنوان",
+      "content": [
+        { "type": "text", "value": "مهله خالد 1", "label": "الفرع الرئيسي" },
+        {
+          "type": "text",
+          "value": "تبوك – الحمراء – شارع الهضيبة – بجوار فندق برج الشمال ونجد"
+        },
+        {
+          "type": "map",
+          "value": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3510.7047720969827!2d36.57058568492331!3d28.367773982522987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDIyJzA0LjAiTiAzNsKwMzQnMDYuMiJF!5e0!3m2!1sar!2seg!4v1764002167772!5m2!1sar!2seg",
+          "label": "الموقع على خرائط جوجل"
+        },
+        { "type": "text", "value": "مهله خالد 2", "label": "الفرع الثاني" },
+        {
+          "type": "text",
+          "value": "تبوك – الحمراء – شارع الهضيبة – بجوار فندق أسوار بلس"
+        },
+        {
+          "type": "map",
+          "value": "https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d14042.501883615161!2d36.575258068107146!3d28.370170720350814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d28.3678329!2d36.5683399!4m3!3m2!1d28.370835099999997!2d36.56986!5e0!3m2!1sar!2seg!4v1764002281141!5m2!1sar!2seg",
+          "label": "الموقع على خرائط جوجل"
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "title": "مواقع الفروع",
+      "content": [
+        {
+          "type": "map",
+          "value": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3510.7047720969827!2d36.57058568492331!3d28.367773982522987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDIyJzA0LjAiTiAzNsKwMzQnMDYuMiJF!5e0!3m2!1sar!2seg!4v1764002167772!5m2!1sar!2seg",
+          "label": "موقع مهله خالد 1"
+        },
+        {
+          "type": "map",
+          "value": "https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d14042.501883615161!2d36.575258068107146!3d28.370170720350814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d28.3678329!2d36.5683399!4m3!3m2!1d28.370835099999997!2d36.56986!5e0!3m2!1sar!2seg!4v1764002281141!5m2!1sar!2seg",
+          "label": "موقع مهله خالد 2"
+        },
+        {
+          "type": "map",
+          "value": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3510.7047720969827!2d36.57058568492331!3d28.367773982522987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDIyJzA0LjAiTiAzNsKwMzQnMDYuMiJF!5e0!3m2!1sar!2seg!4v1764002167772!5m2!1sar!2seg",
+          "label": "موقع الفرع الرئيسي المحدث"
+        }
+      ]
+    },
+
+    {
+      "id": "banking",
+      "title": "الحسابات البنكية",
+      "content": [
+        {
+          "type": "text",
+          "value": "حساب يمؤسسة مهله خالد للتجارة",
+          "label": "نظام الدفع"
+        },
+
+        {
+          "type": "text",
+          "value": "بنك الرجحي",
+          "label": "بنك الرجحي"
+        },
+        {
+          "type": "text",
+          "value": "البيع للبطاقات والكروت مسبقه الدفع بكل انواعها",
+          "label": "بيع البطاقات"
+        },
+        {
+          "type": "text",
+          "value": "حساب مهله خالد 1",
+          "label": "الفرع الرئيسي"
+        },
+        {
+          "type": "image",
+          "value": "/images/bank1-qr.jpeg",
+          "label": "QR Code - البنك الأول"
+        },
+        {
+          "type": "text",
+          "value": "رقم الحساب: 109000010006089630417",
+          "label": "حساب مهله خالد 1",
+          "accountNumber": "109000010006089630417"
+        },
+        {
+          "type": "text",
+          "value": "الايبان: SA4780000109608019630417",
+          "label": "الايبان مهله خالد 1موظف ",
+          "iban": "SA4780000109608019630417"
+        },
+        {
+          "type": "text",
+          "value": "حساب مهله خالد 2",
+          "label": "الفرع الثاني"
+        },
+        {
+          "type": "image",
+          "value": "/images/bank2-qr.jpeg",
+          "label": "QR Code - البنك الثاني"
+        },
+        {
+          "type": "text",
+          "value": "رقم الحساب: 547000010006086212680",
+          "label": "حساب مهله خالد 2",
+          "accountNumber": "547000010006086212680"
+        },
+        {
+          "type": "text",
+          "value": "الايبان: SA458000547608016212680",
+          "label": "الايبان مهله خالد 2 ",
+          "iban": "SA458000547608016212680"
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "التواصل",
+      "content": [
+        {
+          "type": "whatsapp",
+          "value": "+966542497637",
+          "label": "مهله خالد 1 - م/ حسين ابوهاجر"
+        },
+        {
+          "type": "whatsapp",
+          "value": "+966547854809",
+          "label": "مهله خالد 2 - م/ اسلام"
+        },
+        {
+          "type": "snapchat",
+          "value": "https://www.snapchat.com/add/husseingaze24?share_id=FcAwt8oUUeE&locale=ar-SA-u-nu-arab",
+          "label": "سناب شات"
+        },
+
+        {
+          "type": "text",
+          "value": "للتواصل المباشر:966547854809+",
+          "label": "الهاتف"
+        },
+        {
+          "type": "text",
+          "value": "البريد الإلكتروني: mahlakhalidtradingest@gmail.com",
+          "label": "البريد الإلكتروني"
+        }
+      ]
+    },
+    {
+      "id": "installment",
+      "title": "شروط البيع بنظام التقسيط",
+      "content": [
+        {
+          "type": "text",
+          "value": "موظف حكومي"
+        },
+        {
+          "type": "text",
+          "value": "عدم وجود إيقاف خدمات"
+        },
+        {
+          "type": "text",
+          "value": "غير مطالب في مكاتب أخرى"
+        },
+        {
+          "type": "text",
+          "value": "تعريف بالراتب"
+        },
+        {
+          "type": "text",
+          "value": "تقرير سما"
+        },
+        {
+          "type": "text",
+          "value": "عدم وجود سند إلكتروني من أشخاص"
+        }
+      ]
+    }
+  ]
+}
