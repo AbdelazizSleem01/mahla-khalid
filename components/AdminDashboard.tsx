@@ -398,7 +398,7 @@ export default function AdminDashboard() {
                                                     <FaGlobe className=" text-blue-500" />
                                                     <span >{visit.country}</span>
                                                     |
-                                                    <span className='text-blue-700 mr-2 text-sm'>{visit.city}</span>
+                                                    <span className='text-blue-700 mr-2 text-sm'>{decodeURIComponent(visit.city)}</span>
                                                 </div>
                                             </td>
                                             <td>
