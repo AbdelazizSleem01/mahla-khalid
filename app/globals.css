@@ -1,19 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-html {
-  color-scheme: light !important;
-  supported-color-schemes: light !important;
-  isolation: isolate !important;
-  background: #ffffff !important;
-}
-
-* {
-  forced-color-adjust: none !important;
-  filter: none !important;
-  mix-blend-mode: normal !important;
-}
-
 
 
 button{

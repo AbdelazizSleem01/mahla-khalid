@@ -1,7 +1,7 @@
-  import { create } from 'zustand'
-  import { persist } from 'zustand/middleware'
+import { create } from 'zustand'
+import { persist } from 'zustand/middleware'
 
-  interface AppState {
+interface AppState {
     activeTab: string
     adminSession: {
       isLoggedIn: boolean

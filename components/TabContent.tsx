@@ -125,7 +125,7 @@ export default function TabContent({ tabId }: TabContentProps) {
                                 </div>
                                 <div className="flex-1">
                                     <div className="flex justify-between items-start mb-3">
-                                        <h3 className="card-title text-lg font-bold text-blue-600 dark:text-black">{content.label}</h3>
+                                        <h3 className="card-title text-lg font-bold text-blue-600 dark:text-white">{content.label}</h3>
                                         {(content.accountNumber || content.iban) && (
                                             <div className="flex gap-2">
                                                 {content.accountNumber && (
@@ -205,7 +205,7 @@ export default function TabContent({ tabId }: TabContentProps) {
                                             <IconComponent size={24} />
                                         </div>
                                         <div>
-                                            <span className="text-lg font-bold group-hover:underline block">{content.label}</span>
+                                            <span className="text-lg font-bold group-hover:underline block text-blue-600 dark:text-white">{content.label}</span>
                                             <span className="text-sm opacity-90 mt-1 block ">{content.value}</span>
                                         </div>
                                     </div>
@@ -240,7 +240,7 @@ export default function TabContent({ tabId }: TabContentProps) {
                                             <IconComponent size={24} />
                                         </div>
                                         <div>
-                                            <span className="text-lg font-bold group-hover:underline block">{content.label}</span>
+                                            <span className="text-lg font-bold group-hover:underline block ">{content.label}</span>
                                             <span className="text-sm opacity-90 mt-1 block">{content.value}</span>
                                         </div>
                                     </div>
@@ -300,7 +300,7 @@ export default function TabContent({ tabId }: TabContentProps) {
                                     <IconComponent size={18} />
                                 </div>
                                 {content.label && (
-                                    <h3 className="card-title text-blue-600 dark:text-black text-lg font-bold">{content.label}</h3>
+                                    <h3 className="card-title text-blue-600 dark:text-white text-lg font-bold">{content.label}</h3>
                                 )}
                             </div>
                             <div className="flex justify-center">
@@ -329,7 +329,7 @@ export default function TabContent({ tabId }: TabContentProps) {
                                     <FaMapMarkerAlt size={18} />
                                 </div>
                                 {content.label && (
-                                    <h3 className="card-title text-blue-600 dark:text-black text-lg font-bold">{content.label}</h3>
+                                    <h3 className="card-title text-blue-600 dark:text-white text-lg font-bold">{content.label}</h3>
                                 )}
                             </div>
                             <div className="h-80 w-full relative">
