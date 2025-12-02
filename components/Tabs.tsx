@@ -358,7 +358,7 @@ export default function Tabs() {
                                             referrerPolicy="no-referrer-when-downgrade"
                                             className="rounded-b-2xl"
                                         />
-                                        
+
                                     </>
                                 )}
                             </div>
@@ -373,112 +373,112 @@ export default function Tabs() {
 
     return (
         <>
-        <div className="w-full max-w-7xl mx-auto p-4 mb-12 mt-6 ">
-            {/* Enhanced Tabs Navigation */}
-            <motion.div
-                className="relative mb-12"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-            >
-                {/* Background Effect */}
-                <div className="absolute inset-0 bg-linear-to-r from-blue-100 via-blue-100 to-orange-100 dark:from-blue-900/20 dark:via-blue-900/20 dark:to-orange-900/20 rounded-3xl blur-xl opacity-50"></div>
-
-                <div className="relative bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/20 p-2">
-                    <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-7 gap-2">
-                        {tabsConfig.tabs.map((tab) => {
-                            const TabIcon = getTabIcon(tab.id)
-                            const tabColor = getTabColor(tab.id)
-                            const isActive = activeTab === tab.id
-                            const isHovered = hoveredTab === tab.id
-
-                            return (
-                                <Link
-                                    key={tab.id}
-                                    href={`/tabs/${tab.id}`}
-                                    onMouseEnter={() => setHoveredTab(tab.id)}
-                                    onMouseLeave={() => setHoveredTab(null)}
-                                    onClick={() => handleLinkClick(tab.id, 'tab')}
-                                >
-                                    <motion.div
-                                        className={`relative group p-4 m-2 rounded-xl transition-all duration-500 overflow-hidden cursor-pointer ${isActive
-                                            ? `bg-linear-to-r ${tabColor} text-white shadow-2xl transform scale-105`
-                                            : 'bg-white/50 dark:bg-gray-600/50 text-gray-500 dark:text-gray-300 hover:bg-white/80 dark:hover:bg-gray-500/80'
-                                            }`}
-                                        whileHover={{ scale: 1.05 }}
-                                        whileTap={{ scale: 0.95 }}
-                                    >
-                                    {/* Animated Background */}
-                                    <motion.div
-                                        className={`absolute inset-0 bg-linear-to-r ${tabColor} opacity-0 group-hover:opacity-10 transition-opacity duration-300 ${isActive ? 'opacity-20' : ''
-                                            }`}
-                                    />
-
-                                    {/* Content */}
-                                    <div className="relative cursor-pointer z-10 flex flex-col items-center space-y-3">
-                                        <motion.div
-                                            className={`p-3 ml-2 rounded-xl ${isActive
-                                                ? 'bg-white/20 backdrop-blur-sm'
-                                                : `bg-linear-to-r ${tabColor} text-white`
-                                                } shadow-lg`}
-                                            whileHover={{ rotate: 5, scale: 1.1 }}
-                                            transition={{ type: "spring", stiffness: 300 }}
-                                        >
-                                            <TabIcon size={20} />
-                                        </motion.div>
-
-                                        <span className={`font-bold text-sm text-center ${isActive ? 'text-white' : 'text-gray-600 dark:text-white'
-                                            }`}>
-                                            {tab.title}
-                                        </span>
-
-                                        {/* Active Indicator */}
-                                        {isActive && (
-                                            <motion.div
-                                                className="absolute -bottom-2 w-6 h-1 bg-white rounded-full"
-                                                initial={{ scale: 0 }}
-                                                animate={{ scale: 1 }}
-                                                transition={{ type: "spring", stiffness: 300 }}
-                                            />
-                                        )}
-                                    </div>
-
-                                    {/* Hover Effect */}
-                                    {isHovered && !isActive && (
-                                        <motion.div
-                                            className="absolute inset-0 border-2 border-blue-400 rounded-xl opacity-20"
-                                            initial={{ scale: 0.8, opacity: 0 }}
-                                            animate={{ scale: 1, opacity: 0.2 }}
-                                            transition={{ type: "spring", stiffness: 400 }}
-                                        />
-                                    )}
-                                    </motion.div>
-                                </Link>
-                            )
-                        })}
-                    </div>
-                </div>
-            </motion.div>
-
-            <AnimatePresence mode="wait">
+            <div className="w-full max-w-7xl mx-auto p-4 mb-12 mt-6 ">
+                {/* Enhanced Tabs Navigation */}
                 <motion.div
-                    key={activeTab}
-                    initial={{ opacity: 0, y: 30 }}
+                    className="relative mb-12"
+                    initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -30 }}
-                    transition={{ duration: 0.4, type: "spring", stiffness: 500 }}
-                    className="space-y-6"
+                    transition={{ duration: 0.5 }}
                 >
-                    {tabsConfig.tabs
-                        .find(tab => tab.id === activeTab)
-                        ?.content.map((content, index) => (
-                            <div key={index}>
-                                {renderContent(content, index, activeTab)}
-                            </div>
-                        ))}
+                    {/* Background Effect */}
+                    <div className="absolute inset-0 bg-linear-to-r from-blue-100 via-blue-100 to-orange-100 dark:from-blue-900/20 dark:via-blue-900/20 dark:to-orange-900/20 rounded-3xl blur-xl opacity-50"></div>
+
+                    <div className="relative bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/20 p-2">
+                        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-7 gap-2">
+                            {tabsConfig.tabs.map((tab) => {
+                                const TabIcon = getTabIcon(tab.id)
+                                const tabColor = getTabColor(tab.id)
+                                const isActive = activeTab === tab.id
+                                const isHovered = hoveredTab === tab.id
+
+                                return (
+                                    <Link
+                                        key={tab.id}
+                                        href={`/tabs/${tab.id}`}
+                                        onMouseEnter={() => setHoveredTab(tab.id)}
+                                        onMouseLeave={() => setHoveredTab(null)}
+                                        onClick={() => handleLinkClick(tab.id, 'tab')}
+                                    >
+                                        <motion.div
+                                            className={`relative group p-4 m-2 rounded-xl transition-all duration-500 overflow-hidden cursor-pointer ${isActive
+                                                ? `bg-linear-to-r ${tabColor} text-white shadow-2xl transform scale-105`
+                                                : 'bg-white/50 dark:bg-gray-600/50 text-gray-500 dark:text-gray-300 hover:bg-white/80 dark:hover:bg-gray-500/80'
+                                                }`}
+                                            whileHover={{ scale: 1.05 }}
+                                            whileTap={{ scale: 0.95 }}
+                                        >
+                                            {/* Animated Background */}
+                                            <motion.div
+                                                className={`absolute inset-0 bg-linear-to-r ${tabColor} opacity-0 group-hover:opacity-10 transition-opacity duration-300 ${isActive ? 'opacity-20' : ''
+                                                    }`}
+                                            />
+
+                                            {/* Content */}
+                                            <div className="relative cursor-pointer z-10 flex flex-col items-center space-y-3">
+                                                <motion.div
+                                                    className={`p-3 ml-2 rounded-xl ${isActive
+                                                        ? 'bg-white/20 backdrop-blur-sm'
+                                                        : `bg-linear-to-r ${tabColor} text-white`
+                                                        } shadow-lg`}
+                                                    whileHover={{ rotate: 5, scale: 1.1 }}
+                                                    transition={{ type: "spring", stiffness: 300 }}
+                                                >
+                                                    <TabIcon size={20} />
+                                                </motion.div>
+
+                                                <span className={`font-bold text-sm text-center ${isActive ? 'text-white' : 'text-gray-600 dark:text-white'
+                                                    }`}>
+                                                    {tab.title}
+                                                </span>
+
+                                                {/* Active Indicator */}
+                                                {isActive && (
+                                                    <motion.div
+                                                        className="absolute -bottom-2 w-6 h-1 bg-white rounded-full"
+                                                        initial={{ scale: 0 }}
+                                                        animate={{ scale: 1 }}
+                                                        transition={{ type: "spring", stiffness: 300 }}
+                                                    />
+                                                )}
+                                            </div>
+
+                                            {/* Hover Effect */}
+                                            {isHovered && !isActive && (
+                                                <motion.div
+                                                    className="absolute inset-0 border-2 border-blue-400 rounded-xl opacity-20"
+                                                    initial={{ scale: 0.8, opacity: 0 }}
+                                                    animate={{ scale: 1, opacity: 0.2 }}
+                                                    transition={{ type: "spring", stiffness: 400 }}
+                                                />
+                                            )}
+                                        </motion.div>
+                                    </Link>
+                                )
+                            })}
+                        </div>
+                    </div>
                 </motion.div>
-            </AnimatePresence>
-        </div>
+
+                <AnimatePresence mode="wait">
+                    <motion.div
+                        key={activeTab}
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -30 }}
+                        transition={{ duration: 0.4, type: "spring", stiffness: 500 }}
+                        className="space-y-6"
+                    >
+                        {tabsConfig.tabs
+                            .find(tab => tab.id === activeTab)
+                            ?.content.map((content, index) => (
+                                <div key={index}>
+                                    {renderContent(content, index, activeTab)}
+                                </div>
+                            ))}
+                    </motion.div>
+                </AnimatePresence>
+            </div>
             <Footer />
         </>
     )

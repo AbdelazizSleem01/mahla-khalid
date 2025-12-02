@@ -200,7 +200,7 @@ export default function Navbar() {
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 ml-3 relative bg-linear-to-br from-blue-500 to-blue-500 rounded-xl flex items-center justify-center shadow-inner">
                       <Image
-                        src="/images/Logo3.jpeg"
+                        src="/images/logo3.jpeg"
                         alt="مهلة خالد"
                         width={48}
                         height={48}
