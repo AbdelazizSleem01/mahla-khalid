@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
     const { password } = await request.json()
     const { db } = await connectToDatabase()
 
-    const admin = await db.collection('admin').findOne({ username: 'admin' })
+    let admin = await db.collection('admin').findOne({ username: 'admin' })
 
     if (!admin) {
       const hashedPassword = await bcrypt.hash('admin123', 12)
@@ -16,6 +16,11 @@ export async function POST(request: NextRequest) {
         password: hashedPassword,
         createdAt: new Date(),
       })
+      admin = await db.collection('admin').findOne({ username: 'admin' })
+    }
+
+    if (!admin) {
+      return NextResponse.json({ error: 'Admin not found' }, { status: 500 })
     }
 
     const isValid = await bcrypt.compare(password, admin.password)

@@ -17,6 +17,11 @@ export async function POST(request: NextRequest) {
     }
 
     const admin = await db.collection('admin').findOne({ username: 'admin' })
+
+    if (!admin) {
+      return NextResponse.json({ error: 'Admin not found' }, { status: 404 })
+    }
+
     const isValid = await bcrypt.compare(currentPassword, admin.password)
 
     if (!isValid) {
